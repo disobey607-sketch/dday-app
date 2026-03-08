@@ -55,6 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3. 앱 초기화 (Init)
     // -----------------------------------------------------------------
     
+    // 처음에 로컬스토리지에 있는 데이터를 화면에 한 번 그려줍니다.
+    renderApp();
+
     // 1초(1000ms)마다 화면 전체를 새로 그리는 대신, 값만 업데이트
     setInterval(updateCountdownsOnly, 1000);
 
